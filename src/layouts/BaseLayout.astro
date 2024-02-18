@@ -1,4 +1,5 @@
 ---
+import Header from "../components/Header.astro";
 interface Props {
 	title: string;
 }
@@ -20,9 +21,12 @@ const { title } = Astro.props;
 		<title>{title}</title>
 	</head>
 	<body>
-	<div class="orange-circle"></div>
-	<div class="magenta-circle"></div>
-	<div class="cyan-circle"></div>
+		<div class="background-effect">
+			<div class="orange-circle"></div>
+			<div class="magenta-circle"></div>
+			<div class="cyan-circle"></div>
+		</div>
+		<Header />
 		<slot />
 	</body>
 </html>
@@ -48,47 +52,47 @@ const { title } = Astro.props;
 	}
 
 	/* TODO: improve on colors */
-	.orange-circle {
-		position: fixed;
-		--width: 1097px;
-		--height: 1097px;
-		width: var(--width);
-		height: var(--height);
-		top: calc(-1 * var(--height) / 2);
-		left: calc(-1 * var(--width) / 2);
-		border-radius: 100vw;
-		background-image: radial-gradient(#FF8A00, transparent 50%);
-		opacity: 0.3;
+	.background-effect {
+		--circle-width: 1097px;
+		--circle-height: 1097px;
+		position: relative;
 		z-index: -1;
+
+		.orange-circle {
+			position: absolute;
+
+			width: var(--circle-width);
+			height: var(--circle-height);
+			top: calc(-1 * var(--circle-height) / 2);
+			left: calc(-1 * var(--circle-width) / 2);
+			border-radius: 100vw;
+			background-image: radial-gradient(#FF8A00, transparent 50%);
+			opacity: 0.3;
+		}
+
+		.magenta-circle {
+			position: absolute;
+			width: var(--circle-width);
+			height: var(--circle-height);
+			top: calc(-1 * var(--circle-height) / 2);
+			right: -10%;
+			border-radius: 100vw;
+			background-image: radial-gradient(#FF00F5, transparent 50%);
+			opacity: 0.3;
+		}
+
+		.cyan-circle {
+			position: absolute;
+			width: var(--circle-width);
+			height: var(--circle-height);
+			top: -59px;
+			right: calc(-1 * var(--circle-width) / 2);;
+			border-radius: 100vw;
+			background-image: radial-gradient(#00FFE0, transparent 50%);
+			opacity: 0.3;
+		}
 	}
 
-	.magenta-circle {
-		position: fixed;
-		--width: 1097px;
-		--height: 1097px;
-		width: var(--width);
-		height: var(--height);
-		top: calc(-1 * var(--height) / 2);
-		right: -10%;
-		border-radius: 100vw;
-		background-image: radial-gradient(#FF00F5, transparent 50%);
-		opacity: 0.3;
-		z-index: -1;
-	}
-
-	.cyan-circle {
-		position: fixed;
-		--width: 1097px;
-		--height: 1097px;
-		width: var(--width);
-		height: var(--height);
-		top: -59px;
-		right: calc(-1 * var(--width) / 2);;
-		border-radius: 100vw;
-		background-image: radial-gradient(#00FFE0, transparent 50%);
-		opacity: 0.3;
-		z-index: -1;
-	}
 
 	:root {
 		/* Color Variables */
