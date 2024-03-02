@@ -1,16 +1,18 @@
 ---
 import BaseLayout from '../layouts/BaseLayout.astro';
+import BaseButton from "../components/BaseButton.astro";
 ---
 
 <BaseLayout title="Lilia Gilevich">
     <h1>Lilia Gilevich Portfolio</h1>
     <p>Hi, ich bin Grafik- und Webdesignerin mit Erfahrungen im Bereich UI/UX Design, Typographie, Illustration und Fotografie</p>
+    <BaseButton>Check it out!</BaseButton>
 </BaseLayout>
 
 <style>
     h1 {
         font-weight: 600;
-        font-size: var(--space-68);
+        font-size: var(--lilia-font-size-68);
         line-height: 80px;
     }
 </style>

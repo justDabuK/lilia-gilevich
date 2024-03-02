@@ -1,0 +1,57 @@
+<button>
+    <slot />
+</button>
+
+<style>
+button {
+    --gradient-start-color: oklch(44.82% 0.085 338.23);
+    --gradient-middle-color: oklch(56.17% 0.093 337.84);
+    --gradient-end-color: oklch(89.57% 0.16288831736553747 179.6632178677616);
+
+    --opacity-default: 10%;
+    --opacity-hover: 50%;
+
+    cursor: pointer;
+    color: var(--text-color);
+    background: transparent;
+    border: 1px solid var(--accent-color-500);
+    border-radius: 10px;
+
+    font-family: inherit;
+    font-weight: 500;
+    font-size: var(--lilia-font-size-26);
+    padding: var(--size-24) var(--size-64);
+
+    position: relative;
+
+    transition: border 300ms ease-out;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(90deg, var(--gradient-start-color), var(--gradient-middle-color), var(--gradient-end-color));
+        height: 100%;
+        width: 100%;
+        border-radius: 10px;
+        z-index: -1;
+        opacity: var(--opacity-default);
+
+        transition: opacity 300ms ease-out;
+    }
+
+    &:hover {
+        border: none;
+
+        &::before {
+            opacity: var(--opacity-hover);
+        }
+    }
+
+    &:active {
+        background: var(--accent-color-700);
+        border: none;
+    }
+}
+</style>

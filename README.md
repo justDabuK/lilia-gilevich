@@ -1,7 +1,7 @@
 # Lilias Homepage
 ## Todo list
 ### components
-- [ ] introduce the button component
+- [X] introduce the button component
 - [ ] introduce a icon plus text component
 - [ ] set the link styling correctly
 - [ ] overview buttons

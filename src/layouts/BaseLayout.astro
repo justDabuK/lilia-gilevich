@@ -32,6 +32,49 @@ const { title } = Astro.props;
 </html>
 
 <style is:global>
+	:root {
+		/* Color Variables */
+		--text-color: #FEE2FF;
+		--background-color: #08000E;
+		--accent-color-500: oklch(89.57% 0.16288831736553747 179.6632178677616);
+		--accent-color-700: oklch(89.57% 0.16288831736553747 179.6632178677616 / 50%);
+
+		/* sizes */
+		--size-4: 4px;
+		--size-8: 8px;
+		--size-12: 12px;
+		--size-16: 16px;
+		--size-24: 24px;
+		--size-32: 32px;
+		--size-48: 48px;
+		--size-64: 64px;
+		--size-96: 96px;
+		--size-128: 128px;
+		--size-192: 192px;
+		--size-256: 256px;
+		--size-384: 384px;
+		--size-512: 512px;
+		--size-640: 640px;
+		--size-768: 768px;
+
+		/* font sizes */
+		--font-size-12: 12px;
+		--font-size-14: 14px;
+		--font-size-16: 16px;
+		--font-size-18: 18px;
+		--font-size-20: 20px;
+		--font-size-24: 24px;
+		--font-size-30: 30px;
+		--font-size-36: 36px;
+		--font-size-48: 48px;
+		--font-size-60: 60px;
+		--font-size-72: 72px;
+
+		/* lilia font size */
+		--lilia-font-size-26: 26px;
+		--lilia-font-size-68: 68px;
+	}
+
 	html, body {
 		margin: 0;
 		padding: 0;
@@ -88,20 +131,11 @@ const { title } = Astro.props;
 			top: -59px;
 			right: calc(-1 * var(--circle-width) / 2);;
 			border-radius: 100vw;
-			background-image: radial-gradient(#00FFE0, transparent 50%);
+			background-image: radial-gradient(var(--accent-color-500), transparent 50%);
 			opacity: 0.3;
 		}
 	}
 
-
-	:root {
-		/* Color Variables */
-		--text-color: #FEE2FF;
-		--background-color: #08000E;
-
-		/* sizes */
-		--space-68: 68px;
-	}
 
 	html {
 		font-family: "Montserrat", system-ui, sans-serif;
