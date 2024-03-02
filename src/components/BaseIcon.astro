@@ -1,0 +1,37 @@
+---
+import {Icon} from "astro-icon/components";
+
+const { icon } = Astro.props;
+---
+<div class="icon-container">
+    <slot />
+    <Icon name={icon} />
+</div>
+
+<style>
+.icon-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: var(--size-24);
+
+    font-size: var(--lilia-font-size-26);
+    opacity: 50%;
+
+    /* TODO: how to make the icon change its color? */
+    [data-icon] {
+        width: var(--size-64);
+        height: var(--size-64);
+    }
+
+    &:hover {
+        opacity: 100%;
+    }
+
+    &:active {
+        opacity: 100%;
+        color: var(--accent-color-500);
+    }
+}
+</style>
