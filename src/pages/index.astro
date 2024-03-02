@@ -19,16 +19,20 @@ import BaseIcon from "../components/BaseIcon.astro";
 </BaseLayout>
 
 <style>
-    h1 {
-        font-weight: 600;
-        font-size: var(--lilia-font-size-68);
-        line-height: 80px;
-    }
-
     .container {
         display: flex;
         flex-direction: column;
         gap: var(--size-64);
+
+        h1 {
+            font-weight: 600;
+            font-size: var(--lilia-font-size-68);
+            line-height: 80px;
+        }
+
+        p {
+            font-size: var(--lilia-font-size-26);
+        }
 
         .link-container {
             display: flex;
