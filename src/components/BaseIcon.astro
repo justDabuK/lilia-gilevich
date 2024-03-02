@@ -3,28 +3,41 @@ import {Icon} from "astro-icon/components";
 
 const { icon } = Astro.props;
 ---
-<div class="icon-container">
+<div class="container">
     <slot />
-    <Icon name={icon} />
+    <div class="icon-container">
+        <Icon name={icon} />
+    </div>
 </div>
 
 <style>
-.icon-container {
+.container {
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     gap: var(--size-24);
 
     font-size: var(--lilia-font-size-26);
     opacity: 50%;
     transition: opacity 300ms ease-out;
 
+    .icon-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex: 1;
+    }
 
     /* TODO: how to make the icon change its color? */
-    [data-icon] {
+    [data-icon="instagram"] {
         width: var(--size-64);
         height: var(--size-64);
+    }
+
+    [data-icon="contact"] {
+        width: var(--size-64);
+        height: calc(var(--size-64) + var(--size-12));
     }
 
     &:hover {
