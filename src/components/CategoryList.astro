@@ -9,6 +9,49 @@ type Props = {
 
 const { categoryList } = Astro.props;
 ---
+
 <ul>
-    {categoryList.map((category) => (<li><a href={category.url}>{category.title}</a></li>))}
+    {categoryList.map((category) => (<li><a href={category.url}>{category.title.toUpperCase()}</a></li>))}
 </ul>
+
+<style>
+    ul {
+        list-style-type: none;
+        padding: 0;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--size-16);
+
+        li {
+            font-weight: 600;
+            font-size: var(--font-size-60);
+            padding: var(--size-64) 0;
+            border-top: 10px solid #FF00F5;
+            border-right: 10px solid #00FFE0;
+            border-bottom: 10px solid #0075FF;
+            border-left: 10px solid #FF8A00;
+            text-align: center;
+
+            &:hover {
+                background-color: oklch(89.57% 0.16288831736553747 179.6632178677616 / 10%)
+            }
+
+            &:active {
+                background-color: oklch(89.57% 0.16288831736553747 179.6632178677616 / 50%)
+            }
+
+            a {
+                transition: none;
+                &:hover {
+                    border-bottom: none;
+                }
+
+                &:active {
+                    color: var(--text-color);
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+</style>
