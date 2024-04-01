@@ -1,5 +1,6 @@
 ---
 import Header from "../components/Header.astro";
+import Footer from "../components/Footer.astro";
 interface Props {
 	title: string;
 }
@@ -30,6 +31,7 @@ const { title } = Astro.props;
 		<main>
 			<slot />
 		</main>
+		<Footer />
 	</body>
 </html>
 
@@ -83,6 +85,7 @@ const { title } = Astro.props;
 		border: 0;
 		font-size: 100%;
 		font: inherit;
+		box-sizing: border-box;
 	}
 
 	/* HTML5 display-role reset for older browsers */
@@ -91,9 +94,16 @@ const { title } = Astro.props;
 		display: block;
 	}
 
+	html {
+		height: 100%
+	}
+
 	body {
 		line-height: 1;
 		text-wrap: balance;
+		display: grid;
+		grid-template-rows: auto 1fr auto;
+		min-height: 100%;
 	}
 
 	/* TODO: improve on colors */
@@ -150,7 +160,7 @@ const { title } = Astro.props;
 		color: var(--text-color);
 	}
 
-	main, nav {
+	main, nav, footer {
 		width: 80%;
 		margin: 0 auto;
 	}
