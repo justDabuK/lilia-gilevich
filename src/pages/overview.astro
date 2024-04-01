@@ -1,0 +1,31 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+
+const categories = [
+    {
+        title: "Design",
+        url: "/design"
+    },
+    {
+        title: "Animation",
+        url: "/animation"
+    },
+    {
+        title: "Illustration",
+        url: "/illustration"
+    },
+    {
+        title: "Fotografie",
+        url: "/photography"
+    }
+]
+---
+<BaseLayout title="Übersicht">
+    <ul>
+        {
+            categories.map(category => (
+                <li><a href={category.url}>{category.title}</a></li>
+            ))
+        }
+    </ul>
+</BaseLayout>

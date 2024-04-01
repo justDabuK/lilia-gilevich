@@ -1,9 +1,13 @@
-<button>
+---
+const { to } = Astro.props;
+---
+
+<a href={to}>
     <slot />
-</button>
+</a>
 
 <style>
-button {
+a {
     --gradient-start-color: oklch(44.82% 0.085 338.23);
     --gradient-middle-color: oklch(56.17% 0.093 337.84);
     --gradient-end-color: var(--accent-color-500);
