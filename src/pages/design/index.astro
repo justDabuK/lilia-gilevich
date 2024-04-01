@@ -1,12 +1,34 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
+import CategoryButton from "@components/CategoryButton.astro";
+
+const subcategories = [
+    {
+        title: "3D - Design",
+        url: "/design/3d",
+    },
+    {
+        title: "App - Design",
+        url: "/design/app",
+    },
+    {
+        title: "Logo + Icon Design",
+        url: "/design/logoicon",
+    },
+    {
+        title: "Print",
+        url: "/design/print",
+    },
+    {
+        title: "Webdesign",
+        url: "/design/web",
+    },
+]
 ---
 <BaseLayout title="Design">
     <ul>
-        <li><a href="/design/3d">3D - Design</a></li>
-        <li><a href="/design/app">App - Design</a></li>
-        <li><a href="/design/logoicon">Logo + Icon Design</a></li>
-        <li><a href="/design/print">Print</a></li>
-        <li><a href="/design/web">Webdesign</a></li>
+        {
+            subcategories.map(subcategory => <CategoryButton subcategory={subcategory}/>)
+        }
     </ul>
 </BaseLayout>
