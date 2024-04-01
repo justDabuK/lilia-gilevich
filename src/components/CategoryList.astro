@@ -29,10 +29,10 @@ const { categoryList, size } = Astro.props;
             font-weight: 600;
             font-size: var(--font-size-60);
             padding: var(--size-64) 0;
-            border-top: var(--border-size) solid #FF00F5;
+            border-top: var(--border-size) solid var(--pink-accent-color-500);
             border-right: var(--border-size) solid var(--accent-color-500);
-            border-bottom: var(--border-size) solid #0075FF;
-            border-left: var(--border-size) solid #FF8A00;
+            border-bottom: var(--border-size) solid var(--blue-accent-color-500);
+            border-left: var(--border-size) solid var(--orange-accent-color-500);
             text-align: center;
             transition: background-color 300ms ease-in-out;
 
@@ -43,12 +43,12 @@ const { categoryList, size } = Astro.props;
             }
 
             &:hover {
-                background-color: oklch(89.57% 0.16288831736553747 179.6632178677616 / 10%);
+                background-color: var(--accent-color-900);
             }
 
             &:active {
                 color: var(--text-color);
-                background-color: oklch(89.57% 0.16288831736553747 179.6632178677616 / 50%);
+                background-color: var(--accent-color-700);
                 transition: none;
             }
         }

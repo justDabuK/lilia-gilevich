@@ -42,6 +42,10 @@ const { title } = Astro.props;
 		--background-color: #08000E;
 		--accent-color-500: oklch(89.57% 0.16288831736553747 179.6632178677616);
 		--accent-color-700: oklch(89.57% 0.16288831736553747 179.6632178677616 / 50%);
+		--accent-color-900: oklch(89.57% 0.16288831736553747 179.6632178677616 / 10%);
+		--pink-accent-color-500: oklch(69.59% 0.316 330.54);
+		--orange-accent-color-500: oklch(74.74% 0.18 57.36);
+		--blue-accent-color-500: oklch(59.26% 0.223 258.41);
 
 		/* sizes */
 		--size-4: 4px;
@@ -126,7 +130,7 @@ const { title } = Astro.props;
 			top: calc(-1 * var(--circle-height) / 2);
 			left: calc(-1 * var(--circle-width) / 2);
 			border-radius: 100vw;
-			background-image: radial-gradient(#FF8A00, transparent 50%);
+			background-image: radial-gradient(var(--orange-accent-color-500), transparent 50%);
 			opacity: 0.3;
 		}
 
@@ -137,7 +141,7 @@ const { title } = Astro.props;
 			top: calc(-1 * var(--circle-height) / 2);
 			right: -10%;
 			border-radius: 100vw;
-			background-image: radial-gradient(#FF00F5, transparent 50%);
+			background-image: radial-gradient(var(--pink-accent-color-500), transparent 50%);
 			opacity: 0.3;
 		}
 
