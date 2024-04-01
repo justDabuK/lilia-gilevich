@@ -1,0 +1,14 @@
+---
+type Props = {
+    categoryList: {
+        title: string;
+        url: string;
+    }[];
+};
+
+
+const { categoryList } = Astro.props;
+---
+<ul>
+    {categoryList.map((category) => (<li><a href={category.url}>{category.title}</a></li>))}
+</ul>

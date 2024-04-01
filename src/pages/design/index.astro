@@ -1,8 +1,8 @@
 ---
 import BaseLayout from "@layouts/BaseLayout.astro";
-import CategoryButton from "@components/CategoryButton.astro";
+import CategoryList from "../../components/CategoryList.astro";
 
-const subcategories = [
+const subcategoryList = [
     {
         title: "3D - Design",
         url: "/design/3d",
@@ -26,9 +26,5 @@ const subcategories = [
 ]
 ---
 <BaseLayout title="Design">
-    <ul>
-        {
-            subcategories.map(subcategory => <CategoryButton subcategory={subcategory}/>)
-        }
-    </ul>
+    <CategoryList categoryList={subcategoryList}/>
 </BaseLayout>

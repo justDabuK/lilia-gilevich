@@ -1,7 +1,8 @@
 ---
 import BaseLayout from "../layouts/BaseLayout.astro";
+import CategoryList from "../components/CategoryList.astro";
 
-const categories = [
+const categoryList = [
     {
         title: "Design",
         url: "/design"
@@ -21,11 +22,5 @@ const categories = [
 ]
 ---
 <BaseLayout title="Übersicht">
-    <ul>
-        {
-            categories.map(category => (
-                <li><a href={category.url}>{category.title}</a></li>
-            ))
-        }
-    </ul>
+    <CategoryList categoryList={categoryList} />
 </BaseLayout>
