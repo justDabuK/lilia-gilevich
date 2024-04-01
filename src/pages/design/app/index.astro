@@ -1,4 +1,12 @@
 ---
-import BaseLayout from "../../../layouts/BaseLayout.astro";
+import BaseLayout from "@layouts/BaseLayout.astro";
+
+const subpages = (await Astro.glob("./*.md"));
 ---
-<BaseLayout title="App - Design"></BaseLayout>
+<BaseLayout title="App - Design">
+    <ul>
+        {
+            subpages.map((page) => <li><a href={page.url}>{page.frontmatter.title}</a></li>)
+        }
+    </ul>
+</BaseLayout>
