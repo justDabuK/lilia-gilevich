@@ -16,6 +16,11 @@
 - [X] design (overview)
 - [X] Webdesign
 
+### styling
+- [ ] image styling (responsibru)
+- [ ] zeilenabstända
+- [ ] Links im Text hervorheben (youtube)
+
 ## How to
 ### Start the "dev" server
 1. on the left side you see multiple menu icons, the 4th one shows a big play icon and a little bug, click this one
