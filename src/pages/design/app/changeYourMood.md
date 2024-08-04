@@ -9,33 +9,33 @@ title: "Change Your Mood App"
 <iframe height="255" width="500" src="https://www.youtube.com/embed/RoYcEwAJiaA">
 </iframe>
 
-Weiterbildung bei der Wildner Akademie 
-München 2018
-ABSCHLUSSARBEIT
-CHANGE YOUR MOOD APP
+Weiterbildung bei der Wildner Akademie <br />
+München 2018 <br />
+ABSCHLUSSARBEIT <br />
+CHANGE YOUR MOOD APP 
 
-Project by
+Project by <br />
 Lilia Gilevich
 
-Character Design
-Animation
-Camera layout
-Story
-Conception
-Illustration
-Rendering
+Character Design <br />
+Animation <br />
+Camera layout <br />
+Story <br />
+Conception <br />
+Illustration <br />
+Rendering <br />
 Concept art
 
-Copyright 2018 by
+Copyright 2018 by <br />
 Lilia Gilevich
 
-www.liliagilevich.org
+www.liliagilevich.org <br />
 All rights reserved used by permission
 
 Thanks to
 
-Wildner Akademie Munich
-And
+Wildner Akademie Munich <br />
+And <br />
 Frank Giese
 
 Created with Adobe Photoshop and Adobe Illustrator
@@ -46,11 +46,11 @@ Cut with Adobe Premiere Pro
 
 Music
 
-Stock media provided by
-[World_Music/Vittorio Cazzadore]/pond5
-Song title – Mysterious Stranger Things Long
+Stock media provided by <br />
+[World_Music/Vittorio Cazzadore]/pond5 <br />
+Song title – Mysterious Stranger Things Long <br />
 [https://www.pond5.com/de/](https://www.pond5.com/de/)
 
-Space image in the credits by
-Sindre Strøm 
+Space image in the credits by <br />
+Sindre Strøm  <br />
 [https://www.instagram.com/sstromphoto/](https://www.instagram.com/sstromphoto/)
