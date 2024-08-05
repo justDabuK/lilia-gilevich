@@ -21,6 +21,7 @@
 - [ ] zeilenabstända
 - [ ] Links im Text hervorheben (youtube)
 - [ ] Halloween Screens Images evtl nicht auf weiß sondern einzeln
+- [ ] Halloween Konzept Content reduzieren, vorallem Bilder mit Text
 
 ## How to
 ### Start the "dev" server
