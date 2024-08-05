@@ -20,6 +20,7 @@
 - [ ] image styling (responsibru)
 - [ ] zeilenabstända
 - [ ] Links im Text hervorheben (youtube)
+- [ ] Halloween Screens Images evtl nicht auf weiß sondern einzeln
 
 ## How to
 ### Start the "dev" server
