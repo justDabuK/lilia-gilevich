@@ -24,13 +24,29 @@
 - [ ] Halloween Konzept Content reduzieren, vorallem Bilder mit Text
 
 ## How to
-### Start the "dev" server
-1. on the left side you see multiple menu icons, the 4th one shows a big play icon and a little bug, click this one
-2. now on the top of the opened side menu, you see a little play button with a selection next to it
-3. make sure "Run script: dev" is selected
-4. then click the play icon
-5. in the bottom half you should see some "Terminal" output, there should appear a https://localhost:4321 link, you can either click with `CMD + click` it or enter the URL manually
-6. you can stop the server by clicking the stop icon on the top
+### Start the website
+1. open iterm
+![open iterm](./images/open-iterm.jpg)
+
+2. start portfolio website by entering the following command and pressing `ENTER`
+```shell
+start-portfolio-website
+```
+
+![start portfolio website](./images/start-portfolio-website.png)
+
+3. `⌘ + click` the link of the output of the command
+![click on link](./images/click-on-link.jpg)
+
+4. and now the website should be open
+![open website](./images/opened-website.jpg)
+
+DON'T FORGET: to stop the website once you are finished
+
+5. stop the website by pressing `⌃ + C` (control + C) in iTerm
+![exit application](./images/exited-application.png)
+after that, you can savely close iTerm
+
 
 ### How to change the content of a page
 #### Context
@@ -50,5 +66,3 @@ The pages that you can change are "Markdown" files, they end with `.md`. Additio
     - if so you can click it
     - if not, click the dropdown at the right and and select "Commit & Push"
 
-
-### 
